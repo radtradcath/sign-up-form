@@ -37,24 +37,24 @@ body {
 p {
     margin: 0;
 }
+
 .background-img {
-    background-image: url('./img/josh-applegate-ikD_o6lSNNs-unsplash.jpg');
-    width: 30%;
-    background-size: 100%;
+    display: flex;
     position: relative;
-    
 }
 
+
+
 .banner {
-    position: absolute;
-    padding: 20px 0;
-    top: 18%;
-    background-color: rgba(240, 248, 255, 0.349);
-    width: 100%;
-    height: 250px;
     display: flex;
     justify-content: center;
+    width: 100%;
+    top: 5%;
+    padding: 10px 0;
+    background-color: rgba(201, 207, 207, 0.205);
+    position: absolute;
 }
+
 
 .form-body {
     display: flex;
@@ -73,28 +73,20 @@ form,
 }
 
 .header {
-    padding-top: 250px;
-    position: relative;
+    flex-basis: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 40px;
     font-size: 2rem;
     line-height: 1.8;
-    padding-right: 0;
+    padding-bottom: 20px;
 }
 
-.header p:first-child {
-    position: absolute;
-    bottom: 120px;
-    margin: 0;
-    right: 20%;
-    left: 80px;
-    
+.header :first-child {
+    width: 80%;
 }
 
-.header p + p {
-    position: absolute;
-    bottom: 20px;
-    left: 80px;
-    margin: 0;
-}
 
 form {
     background-color: rgb(228, 234, 236);
@@ -122,6 +114,8 @@ input {
     padding: 10px 3px;
     width: 100%;
     border-radius: 6px;
+    border: 3px;
+    border-style: solid;
 }
 
 form p {
@@ -139,20 +133,44 @@ form p {
     background-color:rgb(72, 73, 77);
     color: aliceblue;
     margin-bottom: 8px;
-    box-shadow: ;
+    
+}
+
+.footer input:hover {
+    box-shadow: 5px 5px 12px -5px rgba(176,176,176,1);
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-color: black;
 }
 
 form > p,
 form > div {
     margin-bottom: 13px;
 }
-
+:focus {
+    outline: 0;
+}
 form input:focus {
     box-shadow: 14px 14px 22px -5px rgba(176,176,176,1);
 }
 
 form input:valid {
     border-color: green;
-    background-color: rgba(22, 231, 22, 0.13);
-    
+    background-color: rgba(172, 255, 47, 0.062);
+}
+
+form input:invalid {
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.089);
+}
+
+form input:focus:invalid {
+    border-color: red;
+    background-color: transparent;
+}
+
+form input:placeholder-shown {
+    border-color: black;
+    background-color: transparent;
 }
