@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    font-family: 'cantarell';
+    
+}
+
+@font-face {
+    font-family: 'cantarell';
+    src: url(./fonts/Cantarell/Cantarell-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'cantarell';
+    src: url(./fonts/Cantarell/Cantarell-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'cantarell';
+    src: url(./fonts/Cantarell/Cantarell-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'cantarell';
+    src: url(./fonts/Cantarell/Cantarell-Italic.ttf);
+    font-style: italic;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.background-img {
+    background-image: url('./img/josh-applegate-ikD_o6lSNNs-unsplash.jpg');
+    width: 40%;
+    background-size: 100%;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;        
+    background-color: aliceblue;
+    flex: 1;
+}
+
+.header,
+form,
+.footer {
+    flex: 1;
+    padding-left: 60px;
+    padding-right: 80px;
+    height: 33%;
+}
+
+.header {
+    padding-top: 10px;
+    position: relative;
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+.header p:first-child {
+    position: absolute;
+    bottom: 100px;
+    margin: 0;
+    right: 250px;
+    left: 80px;
+    
+}
+
+.header p + p {
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+    margin: 0;
+}
+
+form {
+    background-color: rgb(228, 234, 236);
+    
+}
